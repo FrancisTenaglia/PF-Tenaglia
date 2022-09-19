@@ -5,13 +5,13 @@ body{
     background-color: white;
 }
 h1{
-    font-size: 3.5rem;
+    font-size: 28px  rem;
     color: white;
     text-shadow: 0.06em 0.06em grey;
     
 }
 p{
-    font-size: 2rem;
+    font-size: 32px;
     color: wheat;
 }
 .logo{
@@ -21,6 +21,7 @@ p{
 }
 
 .ci {  display: grid;
+        width:100% ;
     grid-template-columns: 1.5fr 1.4fr 1.8fr;
     grid-template-rows: 9.5fr 5.8fr 0.5fr;
     gap: 30px 30px;
@@ -34,9 +35,9 @@ p{
   .seccioni1 {  grid-area: seccioni1;
                 background-image: url(../fotos/fondo-tecnologia-red-conexion-global-digital_1017-23324.jpg);
                 background-repeat: no-repeat;
-                height: 450px;
-}
-  
+                background-size: cover;    
+                padding: 20px;
+}  
   .seccioni2 {  grid-area: seccioni2;
                 
                              
@@ -48,7 +49,8 @@ p{
 }
   
   .seccioni4 {  grid-area: seccioni4; 
-                background-color: rgb(63, 58, 58);
+                background-color: rgb(245, 245, 245);
+                
                 
 }
 
@@ -64,9 +66,24 @@ p{
   }
   .footeri{
     grid-area: footeri;
-    background-color: rgb(36, 102, 202);
+    background-color: white;
+    text-align: center;
+    
   }
 .imgseccion2{
     width: 400px;
     height: 300px;
+}
+
+@media only screen and ( max-width:500px){
+  .ci{
+    display: grid;
+    width:100% ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 9.5fr 5.8fr 0.5fr;
+    grid-template-areas:  "seccioni1"
+                          "seccioni2"
+                          "seccioni3"
+                          "seccioni4";
+  }
 }
