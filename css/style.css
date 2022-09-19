@@ -32,24 +32,26 @@ p{
       "seccioni4 seccioni4 seccioni4";
   }
   
-  .seccioni1 {  grid-area: seccioni1;
+.seccioni1 {  grid-area: seccioni1;
                 background-image: url(../fotos/fondo-tecnologia-red-conexion-global-digital_1017-23324.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;    
                 padding: 20px;
 }  
-  .seccioni2 {  grid-area: seccioni2;
+.seccioni2 {  grid-area: seccioni2;
                 
                              
 }
   
-  .seccioni3 {  grid-area: seccioni3;
-                background-color: rgb(206, 173, 173); 
+.seccioni3 {  grid-area: seccioni3;
+                
                 
 }
   
-  .seccioni4 {  grid-area: seccioni4; 
-                background-color: rgb(245, 245, 245);
+.seccioni4 {  grid-area: seccioni4; 
+              background-color: rgb(245, 245, 245);
+              text-align: center;
+              
                 
                 
 }
@@ -64,7 +66,7 @@ p{
             
 
   }
-  .footeri{
+.footeri{
     grid-area: footeri;
     background-color: white;
     text-align: center;
