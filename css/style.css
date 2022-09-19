@@ -33,7 +33,7 @@ p{
   }
   
 .seccioni1 {  grid-area: seccioni1;
-                background-image: url(../fotos/fondo-tecnologia-red-conexion-global-digital_1017-23324.jpg);
+                background-image: url(../fotoS/fondo-tecnologia-red-conexion-global-digital_1017-23324.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;    
                 padding: 20px;
@@ -91,3 +91,12 @@ p{
                           "seccioni4";
   }
 }
+
+/* sobre nosotros */
+
+.seccion1n {  grid-area: seccioni1;
+  background-image: url(../fotoS/fondo-tecnologia-red-conexion-global-digital_1017-23324.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;    
+  padding: 20px;
+}  
