@@ -38,7 +38,7 @@ p{
   
 .seccionindex1 { 
   grid-area: seccioni1;
-  background-image: url(../fotos/fondonuevo.jpg);
+  background-image: url(../fotos/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;    
   padding: 20px ;
@@ -46,7 +46,8 @@ p{
 
 .seccionindex2 {  
   grid-area: seccioni2;
-  padding: 20px;                         
+  padding: 20px;
+
 }
   
 .seccionindex3 {  
@@ -93,6 +94,9 @@ p{
                           "seccioni3"
                           "seccioni4";
   }
+  .seccionindex1{
+    height: 50%;
+  }
 }
 
 /* sobre nosotros */
@@ -104,3 +108,62 @@ p{
   background-size: cover;    
   padding: 20px;
 }
+
+/*contactanos*/
+.c {  display: grid;
+  grid-template-columns: 1.4fr 1.5fr 1.8fr;
+  grid-template-rows: 0.8fr 1fr 0.9fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "ubicacion llamanos cargardatos"
+    "escribinos seguinos cargardatos";
+}
+
+.titulo { 
+  grid-area: titulo;  
+}
+.h1contactanos{
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(70, 70, 236);
+}
+.c{
+  
+}
+.ubicacion {
+   grid-area: ubicacion; 
+  }
+
+.llamanos { 
+  grid-area: llamanos; 
+}
+
+.escribinos { 
+  grid-area: escribinos; 
+}
+
+.seguinos { 
+  grid-area: seguinos; 
+}
+
+.cargardatos { 
+  grid-area:cargardatos; 
+}
+@media only screen and ( max-width:500px){
+  .c{
+    display: grid;
+    width:100% ;
+    grid-template-columns: 2fr;
+    grid-template-rows: 3.5fr 3.5fr 3.5fr 3.5fr 3.5fr;
+    grid-template-areas:  
+                          "titulo"
+                          "ubicacion"
+                          "llamanos"
+                          "escribinos"
+                          "seguidos"
+                          "cargardatos";
+  }
+}
+
