@@ -1,82 +1,85 @@
 body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: white;
 }
+
 h1{
-    font-size: 28px  rem;
-    color: white;
-    text-shadow: 0.06em 0.06em grey;
+  font-size: 28px  rem;
+  color: white;
+  text-shadow: 0.06em 0.06em grey;
     
 }
+
 p{
-    font-size: 32px;
-    color: wheat;
+  font-size: 32px;
+  color: wheat;
 }
+
 .logo{
-    width: 40px;
-    align-items: center;
-    text-align: center ;
+  width: 40px;
+  align-items: center;
+  text-align: center;
 }
 
-.ci {  display: grid;
-        width:100% ;
-    grid-template-columns: 1.5fr 1.4fr 1.8fr;
-    grid-template-rows: 9.5fr 5.8fr 0.5fr;
-    gap: 30px 30px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "seccioni1 seccioni1 seccioni1"
-      "seccioni2 . seccioni3"
-      "seccioni4 seccioni4 seccioni4";
-  }
+.ci {  
+  display: grid;
+  width:100% ;
+  grid-template-columns: 1.5fr 1.4fr 1.8fr;
+  grid-template-rows: 9.5fr 5.8fr 0.5fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "seccioni1 seccioni1 seccioni1"
+    "seccioni2 . seccioni3"
+    "seccioni4 seccioni4 seccioni4";
+}
   
-.seccioni1 {  grid-area: seccioni1;
-                background-image: url(../fotoS/fondo-tecnologia-red-conexion-global-digital_1017-23324.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;    
-                padding: 20px;
+.seccioni1 { 
+  grid-area: seccioni1;
+  background-image: url(../fotos/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;    
+  padding: 20px;
 }  
-.seccioni2 {  grid-area: seccioni2;
-              padding: 20px;
-                
-                             
+
+.seccioni2 {  
+  grid-area: seccioni2;
+  padding: 20px;                         
 }
   
-.seccioni3 {  grid-area: seccioni3;
-              padding: 20px ;
-                
-                
+.seccioni3 {  
+  grid-area: seccioni3;
+  padding: 20px ;
 }
   
-.seccioni4 {  grid-area: seccioni4; 
-              background-color: rgb(245, 245, 245);
-              text-align: center;
-              padding: 20px;
-                
-                
+.seccioni4 { 
+  grid-area: seccioni4; 
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  padding: 20px;              
 }
 
-.fi {  display: grid;
-            grid-template-columns: 1.5fr ;
-            grid-template-rows: 9.5fr ;
-            gap: 30px 30px;
-            grid-auto-flow: row;
-            grid-template-areas:
-            "footeri footeri footeri";
-            
+.fi {  
+  display: grid;
+  grid-template-columns: 1.5fr ;
+  grid-template-rows: 9.5fr ;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  "footeri footeri footeri";
+}
 
-  }
 .footeri{
-    grid-area: footeri;
-    background-color: white;
-    text-align: center;
-    
-  }
+  grid-area: footeri;
+  background-color: white;
+  text-align: center;    
+}
+
 .imgseccion2{
-    width: 400px;
-    height: 300px;
+  width: 400px;
+  height: 300px;
 }
 
 @media only screen and ( max-width:500px){
@@ -94,9 +97,10 @@ p{
 
 /* sobre nosotros */
 
-.seccion1n {  grid-area: seccioni1;
+.seccion1n {
+  grid-area: seccioni1;
   background-image: url(../fotoS/fondo-tecnologia-red-conexion-global-digital_1017-23324.jpg);
   background-repeat: no-repeat;
   background-size: cover;    
   padding: 20px;
-}  
+}
