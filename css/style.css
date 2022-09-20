@@ -23,7 +23,7 @@ p{
   text-align: center;
 }
 
-.ci {  
+.cindex {  
   display: grid;
   width:100% ;
   grid-template-columns: 1.5fr 1.4fr 1.8fr;
@@ -36,32 +36,33 @@ p{
     "seccioni4 seccioni4 seccioni4";
 }
   
-.seccioni1 { 
+.seccionindex1 { 
   grid-area: seccioni1;
-  background-image: url(../fotos/fondo.jpg);
+  background-image: url(../fotos/fondonuevo.jpg);
   background-repeat: no-repeat;
   background-size: cover;    
-  padding: 20px;
+  padding: 20px ;
+  border-radius: 3%;
 }  
 
-.seccioni2 {  
+.seccionindex2 {  
   grid-area: seccioni2;
   padding: 20px;                         
 }
   
-.seccioni3 {  
+.seccionindex3 {  
   grid-area: seccioni3;
   padding: 20px ;
 }
   
-.seccioni4 { 
+.seccionindex4 { 
   grid-area: seccioni4; 
   background-color: rgb(245, 245, 245);
   text-align: center;
   padding: 20px;              
 }
 
-.fi {  
+.findex {  
   display: grid;
   grid-template-columns: 1.5fr ;
   grid-template-rows: 9.5fr ;
@@ -71,7 +72,7 @@ p{
   "footeri footeri footeri";
 }
 
-.footeri{
+.footerindex{
   grid-area: footeri;
   background-color: white;
   text-align: center;    
@@ -83,7 +84,7 @@ p{
 }
 
 @media only screen and ( max-width:500px){
-  .ci{
+  .cindex{
     display: grid;
     width:100% ;
     grid-template-columns: 1fr;
@@ -97,9 +98,9 @@ p{
 
 /* sobre nosotros */
 
-.seccion1n {
+.seccion1nosotros {
   grid-area: seccioni1;
-  background-image: url(../fotoS/fondo-tecnologia-red-conexion-global-digital_1017-23324.jpg);
+  background-image: url(../fotos/fondo-tecnologia-red-conexion-global-digital_1017-23324.jpg);
   background-repeat: no-repeat;
   background-size: cover;    
   padding: 20px;
