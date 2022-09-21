@@ -27,11 +27,11 @@ p{
   display: grid;
   width:100% ;
   grid-template-columns: 1.5fr 1.4fr 1.8fr;
-  grid-template-rows: 9.5fr 5.8fr 0.5fr;
+  grid-template-rows:  5.8fr 0.5fr;
   gap: 30px 30px;
   grid-auto-flow: row;
   grid-template-areas:
-    "seccioni1 seccioni1 seccioni1"
+    
     "seccioni2 . seccioni3"
     "seccioni4 seccioni4 seccioni4";
 }
@@ -42,17 +42,25 @@ p{
   background-repeat: no-repeat;
   background-size: cover;    
   padding: 20px ;
+  display: flex;
+  flex-direction: column; 
 }  
 
 .seccionindex2 {  
   grid-area: seccioni2;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
   
 .seccionindex3 {  
   grid-area: seccioni3;
   padding: 20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
   
 .seccionindex4 { 
@@ -77,93 +85,150 @@ p{
   background-color: white;
   text-align: center;    
 }
-
 .imgseccion2{
   width: 400px;
   height: 300px;
 }
 
-@media only screen and ( max-width:500px){
+@media screen and ( max-width:716px){
   .cindex{
     display: grid;
     width:100% ;
     grid-template-columns: 1fr;
     grid-template-rows: 9.5fr 5.8fr 3.5fr;
-    grid-template-areas:  "seccioni1"
+    grid-template-areas:  
                           "seccioni2"
                           "seccioni3"
                           "seccioni4";
   }
-  .seccionindex1{
-    height: 50%;
-  }
 }
 
-/* sobre nosotros */
+/* desarrollo */
 
-.seccion1nosotros {
+/* .seccion1nosotros {
   grid-area: seccioni1;
   background-image: url(../fotos/fondo-tecnologia-red-conexion-global-digital_1017-23324.jpg);
   background-repeat: no-repeat;
   background-size: cover;    
   padding: 20px;
-}
+} */
 
 /*contactanos*/
-.c {  display: grid;
-  grid-template-columns: 1.4fr 1.5fr 1.8fr;
-  grid-template-rows: 0.8fr 1fr 0.9fr;
+.containermain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "titulo titulo titulo"
     "ubicacion llamanos cargardatos"
     "escribinos seguinos cargardatos";
+  padding: 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
-
 .titulo { 
-  grid-area: titulo;  
+  grid-area: titulo;
+  width: 100%; 
+  height: 100%;
 }
 .h1contactanos{
   font-size: 30px;
   text-align: center;
   background-color: rgb(70, 70, 236);
 }
-.c{
-  
-}
+
 .ubicacion {
-   grid-area: ubicacion; 
-  }
+   grid-area: ubicacion;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 
 .llamanos { 
   grid-area: llamanos; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .escribinos { 
-  grid-area: escribinos; 
+  grid-area: escribinos;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .seguinos { 
-  grid-area: seguinos; 
+  grid-area: seguinos;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
 .cargardatos { 
   grid-area:cargardatos; 
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media only screen and ( max-width:500px){
-  .c{
-    display: grid;
+.form-register{
+  width: 400px;
+  background-color: #24303c;
+  padding: 30px;
+  border-radius: 4px;
+  color: white;
+  
+}
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.controls{
+  width: 100%;
+  background: #d8dde2;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f54c5;
+  font-size: 18px;
+}
+.pcontactanos{
+  height: 40px;
+  text-align: center;
+  font-size: 1x;
+}
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+.form-register a:hover{
+  color: white;
+  text-decoration: underline;
+}
+.form-register .botons {
+  width: 100%;
+  background: #1f54c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+@media  screen and ( max-width:716px){
+  .containermain{
     width:100% ;
-    grid-template-columns: 2fr;
-    grid-template-rows: 3.5fr 3.5fr 3.5fr 3.5fr 3.5fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas:  
-                          "titulo"
+                          
                           "ubicacion"
                           "llamanos"
                           "escribinos"
-                          "seguidos"
+                          "seguinos"
                           "cargardatos";
-  }
+  } 
 }
 
