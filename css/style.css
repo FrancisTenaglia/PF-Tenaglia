@@ -5,11 +5,27 @@ body{
   background-color: white;
 }
 
+/* navegador */
+
+.seccionactual{
+  background-color: rgb(192, 181, 181);
+  border-radius: 8px;
+  color: white;
+}
+
+/* seccion contacto */
+
+.h1contactanos{
+  font-size: 30px;
+  text-align: center;
+  background-color: #1f54c5;
+  padding: 15px;
+}
+
 h1{
   font-size: 28px  rem;
   color: white;
-  text-shadow: 0.06em 0.06em grey;
-    
+  text-shadow: 0.06em 0.06em grey;  
 }
 
 p{
@@ -29,15 +45,14 @@ p{
   grid-template-columns: 1.5fr 1.4fr 1.8fr;
   grid-template-rows:  5.8fr 0.5fr;
   gap: 30px 30px;
+  padding: 40px;
   grid-auto-flow: row;
   grid-template-areas:
-    
-    "seccioni2 . seccioni3"
-    "seccioni4 seccioni4 seccioni4";
+                      "seccioni2 . seccioni3"
+                      "seccioni4 seccioni4 seccioni4";
 }
   
-.seccionindex1 { 
-  grid-area: seccioni1;
+.seccionindex1 {
   background-image: url(../fotos/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;    
@@ -71,13 +86,9 @@ p{
 }
 
 .findex {  
-  display: grid;
-  grid-template-columns: 1.5fr ;
-  grid-template-rows: 9.5fr ;
-  gap: 30px 30px;
-  grid-auto-flow: row;
-  grid-template-areas:
-  "footeri footeri footeri";
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 .footerindex{
@@ -102,6 +113,7 @@ p{
                           "seccioni4";
   }
 }
+
 
 /* desarrollo */
 
@@ -133,11 +145,8 @@ p{
   width: 100%; 
   height: 100%;
 }
-.h1contactanos{
-  font-size: 30px;
-  text-align: center;
-  background-color: rgb(70, 70, 236);
-}
+
+
 
 .ubicacion {
    grid-area: ubicacion;
