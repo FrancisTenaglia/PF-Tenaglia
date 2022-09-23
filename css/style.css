@@ -5,7 +5,7 @@ body{
   background-color: white;
 }
 
-/* navegador */
+/* barra de navegacion */
 
 .seccionactual{
   background-color: rgb(192, 181, 181);
@@ -13,14 +13,18 @@ body{
   color: white;
 }
 
-/* seccion contacto */
+/* header general */
 
-.h1contactanos{
-  font-size: 30px;
-  text-align: center;
-  background-color: #1f54c5;
-  padding: 15px;
+.seccionindex1 {
+  background-image: url(../fotos/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;    
+  padding: 20px ;
+  display: flex;
+  flex-direction: column; 
 }
+
+/* elementos generales */
 
 h1{
   font-size: 28px  rem;
@@ -33,33 +37,31 @@ p{
   color: wheat;
 }
 
-.logo{
-  width: 40px;
-  align-items: center;
-  text-align: center;
-}
-
 .cindex {  
   display: grid;
   width:100% ;
   grid-template-columns: 1.5fr 1.4fr 1.8fr;
   grid-template-rows:  5.8fr 0.5fr;
-  gap: 30px 30px;
+  gap: 15px;
   padding: 40px;
   grid-auto-flow: row;
   grid-template-areas:
                       "seccioni2 . seccioni3"
                       "seccioni4 seccioni4 seccioni4";
 }
-  
-.seccionindex1 {
-  background-image: url(../fotos/fondo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;    
-  padding: 20px ;
-  display: flex;
-  flex-direction: column; 
-}  
+
+@media screen and ( max-width:716px){
+  .cindex{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 9.5fr 5.8fr 3.5fr;
+    grid-template-areas:
+                        "seccioni2"
+                        "seccioni3"
+                        "seccioni4";
+  }
+}
 
 .seccionindex2 {  
   grid-area: seccioni2;
@@ -67,7 +69,6 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
   
 .seccionindex3 {  
@@ -77,13 +78,17 @@ p{
   flex-direction: column;
   align-items: center;
 }
-  
-.seccionindex4 { 
-  grid-area: seccioni4; 
-  background-color: rgb(245, 245, 245);
-  text-align: center;
-  padding: 20px;              
+
+.imgseccion2{
+  width: 400px;
+  height: 300px;
 }
+
+.logo{
+  width: 40px;
+  align-items: center;
+  text-align: center;
+}  
 
 .findex {  
   display: flex;
@@ -96,36 +101,35 @@ p{
   background-color: white;
   text-align: center;    
 }
-.imgseccion2{
-  width: 400px;
-  height: 300px;
+
+.controls{
+  width: 100%;
+  background: #d8dde2;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f54c5;
+  font-size: 18px;
 }
 
-@media screen and ( max-width:716px){
-  .cindex{
-    display: grid;
-    width:100% ;
-    grid-template-columns: 1fr;
-    grid-template-rows: 9.5fr 5.8fr 3.5fr;
-    grid-template-areas:  
-                          "seccioni2"
-                          "seccioni3"
-                          "seccioni4";
-  }
+/* seccion index */
+
+.seccionindex4 { 
+  grid-area: seccioni4; 
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  padding: 20px;              
 }
 
+/* seccion contacto */
 
-/* desarrollo */
+.h1contactanos{
+  font-size: 30px;
+  text-align: center;
+  background-color: #1f54c5;
+  padding: 15px;
+}
 
-/* .seccion1nosotros {
-  grid-area: seccioni1;
-  background-image: url(../fotos/fondo-tecnologia-red-conexion-global-digital_1017-23324.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;    
-  padding: 20px;
-} */
-
-/*contactanos*/
 .containermain {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -140,19 +144,32 @@ p{
   justify-content: center;
   gap: 20px;
 }
+
+@media  screen and ( max-width:716px){
+  .containermain{
+    width:100% ;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:  
+                        "ubicacion"
+                        "llamanos"
+                        "escribinos"
+                        "seguinos"
+                        "cargardatos";
+  } 
+}
+
 .titulo { 
   grid-area: titulo;
   width: 100%; 
   height: 100%;
 }
 
-
-
 .ubicacion {
-   grid-area: ubicacion;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  grid-area: ubicacion;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .llamanos { 
@@ -177,12 +194,13 @@ p{
 }
 
 .cargardatos { 
-  grid-area:cargardatos; 
+  grid-area: cargardatos; 
   align-items: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .form-register{
   width: 400px;
   background-color: #24303c;
@@ -191,32 +209,22 @@ p{
   color: white;
   
 }
+
 .form-register h4 {
   font-size: 22px;
   margin-bottom: 20px;
 }
-.controls{
-  width: 100%;
-  background: #d8dde2;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #1f54c5;
-  font-size: 18px;
-}
-.pcontactanos{
-  height: 40px;
-  text-align: center;
-  font-size: 1x;
-}
+
 .form-register a {
   color: white;
   text-decoration: none;
 }
+
 .form-register a:hover{
   color: white;
   text-decoration: underline;
 }
+
 .form-register .botons {
   width: 100%;
   background: #1f54c5;
@@ -226,18 +234,9 @@ p{
   margin: 16px 0;
   font-size: 16px;
 }
-@media  screen and ( max-width:716px){
-  .containermain{
-    width:100% ;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:  
-                          
-                          "ubicacion"
-                          "llamanos"
-                          "escribinos"
-                          "seguinos"
-                          "cargardatos";
-  } 
-}
 
+.pcontactanos{
+  height: 40px;
+  text-align: center;
+  font-size: 1x;
+}
