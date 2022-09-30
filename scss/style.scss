@@ -1,0 +1,265 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  /* barra de navegacion */
+  
+  .seccionactual{
+    background-color: rgb(192, 181, 181);
+    border-radius: 8px;
+    color: white;
+  }
+  
+  /* header general */
+  
+  .seccionindex1 {
+    background-image: url(../fotos/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    padding: 20px ;
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  /* elementos generales */
+  
+  h1{
+    font-size: 28px  rem;
+    color: white;
+    text-shadow: 0.06em 0.06em grey;  
+  }
+  
+  p{
+    font-size: 32px;
+    color: wheat;
+  }
+  
+  .cindex {  
+    display: grid;
+    width:100% ;
+    grid-template-columns: 1.5fr 1.4fr 1.8fr;
+    grid-template-rows:  5.8fr 0.5fr;
+    gap: 15px;
+    padding: 40px;
+    grid-auto-flow: row;
+    grid-template-areas:
+                        "seccioni2 . seccioni3"
+                        "seccioni4 seccioni4 seccioni4";
+  }
+  //variables
+  $smartphone:480px;
+  $tablets:728px;
+  $desktop:1024px;
+  .cindex{
+    @media(max-width:$smartphone) {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 9.5fr 5.8fr 3.5fr;
+      grid-template-areas:
+                          "seccioni2"
+                          "seccioni3"
+                          "seccioni4"
+    }
+    @media(max-width:$tablets) {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 9.5fr 5.8fr 3.5fr;
+      grid-template-areas:
+                          "seccioni2"
+                          "seccioni3"
+                          "seccioni4"
+    }
+  }
+  // @media screen and ( max-width:716px){
+  //   .cindex{
+  //     display: grid;
+  //     width: 100%;
+  //     grid-template-columns: 1fr;
+  //     grid-template-rows: 9.5fr 5.8fr 3.5fr;
+  //     grid-template-areas:
+  //                         "seccioni2"
+  //                         "seccioni3"
+  //                         "seccioni4"
+  //   }
+  // }
+  
+  .seccionindex2 {  
+    grid-area: seccioni2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  .seccionindex3 {  
+    grid-area: seccioni3;
+    padding: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .imgseccion2{
+    width: 400px;
+    height: 300px;
+  }
+  
+  .logo{
+    width: 40px;
+    align-items: center;
+    text-align: center;
+  }  
+  
+  .findex {  
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .footerindex{
+    grid-area: footeri;
+    background-color: white;
+    text-align: center;    
+  }
+  
+  .controls{
+    width: 100%;
+    background: #d8dde2;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f54c5;
+    font-size: 18px;
+  }
+  
+  /* seccion index */
+  
+  .seccionindex4 { 
+    grid-area: seccioni4; 
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    padding: 20px;              
+  }
+  
+  /* seccion contacto */
+  
+  .h1contactanos{
+    font-size: 30px;
+    text-align: center;
+    background-color: #1f54c5;
+    padding: 15px;
+  }
+  .containermain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "ubicacion llamanos cargardatos"
+      "escribinos seguinos cargardatos";
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }  
+  @media  screen and ( max-width:716px){
+    .containermain{
+      width:100% ;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas:  
+                          "ubicacion"
+                          "llamanos"
+                          "escribinos"
+                          "seguinos"
+                          "cargardatos";
+    } 
+  }
+  
+  .titulo { 
+    grid-area: titulo;
+    width: 100%; 
+    height: 100%;
+  }
+  
+  .ubicacion {
+    grid-area: ubicacion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .llamanos { 
+    grid-area: llamanos; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .escribinos { 
+    grid-area: escribinos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .seguinos { 
+    grid-area: seguinos;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .cargardatos { 
+    grid-area: cargardatos; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-register{
+    width: 400px;
+    background-color: #24303c;
+    padding: 30px;
+    border-radius: 4px;
+    color: white;
+    
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover{
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #1f54c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  
+  .pcontactanos{
+    height: 40px;
+    text-align: center;
+    font-size: 1ex;
+  }
