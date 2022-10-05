@@ -18,13 +18,12 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column; }
+  .seccionindex1_h1 {
+    color: white;
+    font-size: 28px rem;
+    text-shadow: 0.06em 0.06em grey; }
 
 /* elementos generales */
-h1 {
-  font-size: 28px  rem;
-  color: white;
-  text-shadow: 0.06em 0.06em grey; }
-
 p {
   font-size: 32px;
   color: wheat; }
@@ -37,8 +36,7 @@ p {
   gap: 15px;
   padding: 40px;
   grid-auto-flow: row;
-  grid-template-areas: "seccioni2 . seccioni3"
- "seccioni4 seccioni4 seccioni4"; }
+  grid-template-areas: "seccioni2 . seccioni3" "seccioni4 seccioni4 seccioni4"; }
 
 @media (max-width: 480px) {
   .cindex {
@@ -46,9 +44,7 @@ p {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 9.5fr 5.8fr 3.5fr;
-    grid-template-areas: "seccioni2"
- "seccioni3"
- "seccioni4"; } }
+    grid-template-areas: "seccioni2" "seccioni3" "seccioni4"; } }
 
 @media (max-width: 728px) {
   .cindex {
@@ -56,9 +52,7 @@ p {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 9.5fr 5.8fr 3.5fr;
-    grid-template-areas: "seccioni2"
- "seccioni3"
- "seccioni4"; } }
+    grid-template-areas: "seccioni2" "seccioni3" "seccioni4"; } }
 
 .seccionindex2 {
   grid-area: seccioni2;
@@ -79,7 +73,7 @@ p {
   height: 300px; }
 
 .logo {
-  width: 40px;
+  width: 100px;
   align-items: center;
   text-align: center; }
 
@@ -105,11 +99,16 @@ p {
 /* seccion index */
 .seccionindex4 {
   grid-area: seccioni4;
-  background-color: whitesmoke;
+  background-color: white;
   text-align: center;
   padding: 20px; }
 
 /* seccion contacto */
+.titulo {
+  grid-area: titulo;
+  width: 100%;
+  height: 100%; }
+
 .h1contactanos {
   font-size: 30px;
   text-align: center;
@@ -122,28 +121,18 @@ p {
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "ubicacion llamanos cargardatos"
- "escribinos seguinos cargardatos";
+  grid-template-areas: "ubicacion llamanos cargardatos" "escribinos seguinos cargardatos";
   padding: 25px;
   align-items: center;
   justify-content: center;
   gap: 20px; }
 
-/* @media screen and (max-width: 716px) {
+@media screen and (max-width: 716px) {
   .containermain {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "ubicacion"
- "llamanos"
- "escribinos"
- "seguinos"
- "cargardatos"; } } */
-
-.titulo {
-  grid-area: titulo;
-  width: 100%;
-  height: 100%; }
+    grid-template-areas: "ubicacion" "llamanos" "escribinos" "seguinos" "cargardatos"; } }
 
 .ubicacion {
   grid-area: ubicacion;
