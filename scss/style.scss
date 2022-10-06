@@ -79,18 +79,6 @@ body{
                           "seccioni4"
     }
   }
-  // @media screen and ( max-width:716px){
-  //   .cindex{
-  //     display: grid;
-  //     width: 100%;
-  //     grid-template-columns: 1fr;
-  //     grid-template-rows: 9.5fr 5.8fr 3.5fr;
-  //     grid-template-areas:
-  //                         "seccioni2"
-  //                         "seccioni3"
-  //                         "seccioni4"
-  //   }
-  // }
   
   .seccionindex2 {  
     grid-area: seccioni2;
@@ -246,7 +234,7 @@ body{
     background:$azulcito;
     border: none;
     padding: 12px;
-    color: white;
+    color:$blanco;
     margin: 16px 0;
     font-size: 16px;
   }
