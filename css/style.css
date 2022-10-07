@@ -44,7 +44,10 @@ p {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 9.5fr 5.8fr 3.5fr;
-    grid-template-areas: "seccioni2" "seccioni3" "seccioni4"; } }
+    grid-template-areas: "seccioni2" "seccioni3" "seccioni4"; }
+    .cindex .imgseccion2 {
+      width: 250px;
+      height: 180px; } }
 
 @media (max-width: 728px) {
   .cindex {
