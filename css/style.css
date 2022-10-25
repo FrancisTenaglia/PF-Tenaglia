@@ -12,7 +12,7 @@ body {
 
 /* header general */
 .seccionindex1 {
-  background-image: url(../fotos/fondo.jpg);
+  background-image: url(../fotos/fondoo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px;
@@ -36,7 +36,8 @@ p {
   gap: 15px;
   padding: 40px;
   grid-auto-flow: row;
-  grid-template-areas: "seccioni2 . seccioni3" "seccioni4 seccioni4 seccioni4"; }
+  grid-template-areas: "seccioni2 . seccioni3"
+ "seccioni4 seccioni4 seccioni4"; }
 
 @media (max-width: 480px) {
   .cindex {
@@ -44,7 +45,9 @@ p {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 9.5fr 5.8fr 3.5fr;
-    grid-template-areas: "seccioni2" "seccioni3" "seccioni4"; }
+    grid-template-areas: "seccioni2"
+ "seccioni3"
+ "seccioni4"; }
     .cindex .imgseccion2 {
       width: 250px;
       height: 180px; } }
@@ -55,7 +58,9 @@ p {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 9.5fr 5.8fr 3.5fr;
-    grid-template-areas: "seccioni2" "seccioni3" "seccioni4"; } }
+    grid-template-areas: "seccioni2"
+ "seccioni3"
+ "seccioni4"; } }
 
 .seccionindex2 {
   grid-area: seccioni2;
@@ -124,7 +129,8 @@ p {
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "ubicacion llamanos cargardatos" "escribinos seguinos cargardatos";
+  grid-template-areas: "ubicacion llamanos cargardatos"
+ "escribinos seguinos cargardatos";
   padding: 25px;
   align-items: center;
   justify-content: center;
@@ -135,7 +141,11 @@ p {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "ubicacion" "llamanos" "escribinos" "seguinos" "cargardatos"; } }
+    grid-template-areas: "ubicacion"
+ "llamanos"
+ "escribinos"
+ "seguinos"
+ "cargardatos"; } }
 
 .ubicacion {
   grid-area: ubicacion;
@@ -200,3 +210,51 @@ p {
   height: 40px;
   text-align: center;
   font-size: 1ex; }
+  /*estilo de juegos*/
+
+  .container-juegos {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+  }
+  .h3-juegos{
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+  }
+  .p1-juegos {
+    color:rgb(0, 0, 0);
+    font-size: 1.6rem;
+  }
+  .c1-juegos{
+    text-align: justify;
+    padding: 30px;
+    display: inline-block;
+    width: 49%;
+  }
+  .c2-juegos{
+    padding: 30px;
+    align-items: right;
+  }
+  .proveedores{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    padding: 30px 70px;
+    gap: 10px 20px;
+    align-content: center;
+  }
+  .prove{
+    opacity: .7;
+    border: 2px double gray;
+  }
+  .prove:hover{
+    opacity: 1;
+    border: solid white 2px;
+  }
+  @media screen and (max-width: 716px) {
+    .container-juegos {
+      flex-wrap: wrap;
+    }
+    .c1-juegos{
+      width: auto;
+    }}
