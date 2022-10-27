@@ -126,8 +126,8 @@ p {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: 
-  "ubicacion llamanos cargardatos"
- "escribinos seguinos cargardatos";
+  "ubicacion escribinos cargardatos"
+ "llamanos seguinos cargardatos";
   padding: 25px;
   align-items: center;
   justify-content: center;
@@ -137,7 +137,7 @@ p {
   .containermain {
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 0.2fr);
     grid-template-areas: 
     "cargardatos"
     "ubicacion"
