@@ -45,7 +45,7 @@ p {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 9.5fr 5.8fr;
+    grid-template-rows: 8.5fr 2.8fr;
     grid-template-areas: 
     "seccioni2"
     "seccioni3"; }
@@ -58,7 +58,7 @@ p {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 9.5fr 5.8fr;
+    grid-template-rows: 8.5fr 2.8fr;
     grid-template-areas:
       "seccioni2"
       "seccioni3"
