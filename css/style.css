@@ -256,4 +256,7 @@ p {
     .proveedores{
       padding: 30px;
       gap: 0;
+    }
+    .prove{
+      opacity: 1;
     }}
